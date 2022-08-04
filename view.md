@@ -57,3 +57,36 @@ GoogleMapView
   }
 </pre>
 </p>
+
+<h3>Вложеность</h3>
+Старайтесь избегать большой вложености view, оптимально иметь не более 3 subview. С одной стороны это сильно упростит верстку, так как не нужно будет выстраивать сложную иерархию зависимостей. С другой повысит переиспользуемость, так как небольшие view удобнее успользовать как "кирпичики" при верстке.
+<p>
+Правильно:<br>
+<pre>
+class HeaderView {
+  var titleLabel: UILabel
+  var subtitleLabel: UILabel
+}
+class UserInfoView {
+  var headerView: HeaderView
+  var userpicImageView: UIImageView
+  var statusLabel: UILabelv
+}
+class UserProfileView {
+  var userInfoView: UserInfoView
+  var editButton: UIButton
+} 
+  </pre>
+</p>
+<p>
+Неравильно:<br>
+<pre>
+class UserProfileView {
+  var shortNameLabel: UILabel
+  var fullNameLabel: UILabel
+  var userpicImageView: UIImageView
+  var statusLabel: UILabel
+  var editButton: UIButton
+} 
+</pre>
+</p>
