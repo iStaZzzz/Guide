@@ -1,3 +1,7 @@
+---
+layout: default
+---
+
 <h2>View</h2>
 
 <h3>UIKit</h3>
