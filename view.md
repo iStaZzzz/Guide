@@ -1,7 +1,3 @@
----
-layout: default
----
-
 <h2>View</h2>
 
 <h3>UIKit</h3>
@@ -20,7 +16,7 @@ MapView
   </pre>
 </p>
 <p>
-Неравильно:
+Неправильно:
 <pre>
 SettingsTitleView
 CurrentUserView
@@ -52,7 +48,7 @@ GoogleMapView
   </pre>
 </p>
 <p>
-Неравильно:<br>
+Неправильно:<br>
 <pre>
   func viewDidLoad() {
       ...
@@ -83,7 +79,7 @@ class UserProfileView {
   </pre>
 </p>
 <p>
-Неравильно:<br>
+Неправильно:<br>
 <pre>
 class UserProfileView {
   var shortNameLabel: UILabel
